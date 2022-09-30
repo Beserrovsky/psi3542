@@ -11,16 +11,20 @@ gc.collect()
 import dht
 
 
-ssid = 'KOFUJI_2022'
-password = 'b0r@b0r@'
+ssid = 'FamiliaOliveira - 2G'
+password = 'oliveira123'
 mqtt_server = '18.197.248.71'
 client_id = ubinascii.hexlify(machine.unique_id())
 
 topic_led_sub = b'led-13683702'
-topic_term_sub = b'term-13683702'
-
 topic_led_state_pub = b'led_state-13683702'
+
+topic_term_sub = b'term-13683702'
+topic_term_toggle_sub = b'term_toggle-13683702'
+topic_term_state_pub = b'term_state-13683702'
+
 topic_notif_pub = b'notification-13683702'
+
 topic_temp_pub = b'temp-13683702'
 topic_hum_pub = b'hum-13683702'
 
